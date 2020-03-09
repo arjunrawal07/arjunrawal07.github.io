@@ -1,0 +1,572 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body {
+    width: 100%vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.containerGrid {
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.image1 {
+    grid-row: 1 / 5;
+    grid-column: 1 / 19;
+    background-image: url("/Users/arjunrawal/sei/projects/project-1/Project-1-Build-A-Website/imgs/Image1.png");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.navbar {
+    grid-row: 1;
+    grid-column: 2 / 10;
+    background-color: white;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    text-align: center;
+}
+
+.companyName {
+    grid-column: 2;
+}
+
+.navbar_Link1 {
+    grid-column: 8;
+}
+
+.navbar_Link2 {
+    grid-column: 9;
+}
+.navbar_Link3 {
+    grid-column: 10;
+}
+.navbar_Link4 {
+    grid-column: 11;
+}
+.navbar_Link5 {
+    grid-column: 12;
+}
+
+.navbar_Link6 {
+    grid-column: 13;
+}
+
+.talk {
+    grid-column: 15;
+    background-color: red;
+    top: 10px;
+    right: -15px;
+}
+.section2 {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 6;
+    grid-column-end: 8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.topLine {
+    font-size: 24;
+}
+
+.middleLine {
+    font-size: 100;
+}
+
+.bottomLine {
+    font-size: 20;
+}
+.section3 {
+    grid-row-start: 5;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 19;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.nestedExperience {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    margin-top: 30px;
+}    
+
+.experienceHeading {
+    font-size: 40px;
+}
+
+.caption {
+    font-style: italic;
+    font-size: 15px;
+    color: gray;
+}
+
+.details {
+    font-size: 10px;
+}
+
+.imageWrapper {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 10;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.sittingDocks {
+    grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 5;
+    grid-column-end: 9;
+    background-image: url("/Users/arjunrawal/sei/projects/project-1/Project-1-Build-A-Website/imgs/pexels-photo-7.png");
+    background-size: cover;
+    border: 5px solid white;
+}
+
+.holdingHands {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 6;
+    grid-column-end: 10;
+    background-image: url("/Users/arjunrawal/sei/projects/project-1/Project-1-Build-A-Website/imgs/pexels-photo-6.png");
+    background-size: cover;
+    border: 5px solid white;
+ 
+}
+.section4 {
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 19;
+    text-align: center;
+    background-color: #EE2655;
+    font-style: italic;
+    font-size: 22px;
+    color: white;
+    font-weight: 300;
+    padding-top: 60px;
+}
+
+.button {
+    border: 1px solid white;
+    background-color: #EE2655;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+}
+
+input {
+    padding-top: 5px;
+    width: 300px;
+    background-color: lightgray;
+}
+
+.section5 {
+    background-color: #F7F7F7;
+    grid-row-start: 10;
+    grid-row-end: 11;
+    grid-column-start: 1;
+    grid-column-end: 19;
+    text-align: center;
+    padding-top: 60px;
+    font-size: 69px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.package {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+}
+
+.packageTitle {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    text-align: left;
+    color: black;
+}
+
+.packageRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    padding: 0;
+}
+.description {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    text-align: left;
+    color: black;
+}
+
+.section6 {
+    grid-row-start: 10;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end: 19;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+.worldMap {
+    grid-row: 1 / 9;
+    grid-column: 1 /9;
+    background-image: url("imgs/Group3.png");
+    opacity: 0.2;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sectionHeading { 
+    grid-row-start: 10;
+    grid-row-end: 13;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    text-align: center;
+    font-size: 40px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: black;
+}
+
+.greeceContainer {
+    grid-row-start: 25;
+    grid-row-end: 30;
+    grid-column-start: 2;
+    grid-column-end: 16;
+    background-image: url('imgs/pexels-photo-5.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    border: 5px solid white;
+    box-shadow: 20px 20px 50px grey;
+}
+
+.greeceText {
+    grid-row-start: 1;
+    grid-row-end: 11;
+    grid-column-start: 6;
+    grid-column-end: 11;
+    text-align: center;
+    color: black;   
+    background-color: #FFFFFF;
+    opacity: 84%; 
+}
+.duration {
+    font-style: italic;
+    color: gray;
+}
+
+.tripDescription {
+    color: black;
+    text-align: center;
+}
+
+.belgia {
+    grid-row-start: 35;
+    grid-row-end: 60;
+    grid-column-start: 2;
+    grid-column-end: 9;
+    background-image: url("/Users/arjunrawal/sei/projects/project-1/Project-1-Build-A-Website/imgs/pexels-photo-3.png");
+    background-size: cover;
+    background-position: center;
+    border: white;
+    box-shadow: 20px 20px 50px grey;
+}
+
+.belgiaText {
+   grid-row-start: 60;
+   grid-row-end: 64;
+   grid-column-start: 2;
+   grid-column-end: 9;
+   text-align: center;
+}
+.location {
+    font-size: 46px;
+    font-weight: 300;
+}
+
+.middleEast {
+    grid-row-start: 35;
+    grid-row-end: 60;
+    grid-column-start: 9;
+    grid-column-end: 16;
+    background-image: url("/Users/arjunrawal/sei/projects/project-1/Project-1-Build-A-Website/imgs/pexels-photo-4.png");
+    background-size: cover;
+    background-position: center;
+    border: white;
+    box-shadow: 20px 20px 50px grey;
+}
+
+.middleEastText {
+    grid-row-start: 60;
+    grid-row-end: 64;
+    grid-column-start: 9;
+    grid-column-end: 16;
+    text-align: center;
+}
+
+
+.destinations {
+    grid-row-start: 65;
+    grid-row-end: 66;
+    grid-column-start: 8;
+    grid-column-end: 11;
+    text-align: center;
+    color: #EE2655;
+    background-color: white;
+    margin: 20px;
+    border: 2px solid #EE2655;
+}
+
+.section7 {
+    grid-row-start: 80;
+    grid-row-end: 100;
+    grid-column-start: 1;
+    grid-column-end: 19;
+    background-color: #EE2655;
+}
+
+.testimony {
+    grid-column-start: 1;
+    grid-column-end: 19;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.testimonyTitle {
+    color: white;
+    font-size: 70px;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.quote {
+    font-size: 46px;
+    color: #FFE200;
+    font-weight: 200;
+    font-style: italic;
+}
+.testDescription {
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+.source {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.section8 {
+    grid-row-start: 101;
+    grid-row-end: 161;
+    grid-column-start: 1;
+    grid-column-end: 19;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    border: solid blue;
+    text-align: center;
+}
+
+.blog {
+    grid-column-start: 1;
+    grid-column-end: 19;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.sectionTitle {
+    font-size: 70px;
+    color: black;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+.rowImages {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+
+}
+
+.row1 {
+    grid-row-start: 4;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+} 
+
+.breakfastText {
+    grid-row-start: 4;
+    grid-row-end: 9;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-image: url("/Users/arjunrawal/sei/projects/project-1/Project-1-Build-A-Website/imgs/pexels-photo-248001.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.nextLevelText {
+    grid-row-start: 4;
+    grid-row-end: 9;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-image: url("/Users/arjunrawal/sei/projects/project-1/Project-1-Build-A-Website/imgs/pexels-photo-1.png");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.gadgetsText {
+    grid-row-start: 4;
+    grid-row-end: 9;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    background-image: url("/Users/arjunrawal/sei/projects/project-1/Project-1-Build-A-Website/imgs/pexels-photo-2.png");
+    background-position: center;
+    background-size: cover;
+
+}
+.viewMore {
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    margin: 100px 10px;
+    text-align: center;
+    color: #EE2655;
+    background-color: white;
+    border: 2px solid #EE2655;
+}
+
+.section9 {
+    grid-row-start: 162;
+    grid-row-end: 202;
+    grid-column-start: 1;
+    grid-column-end: 19;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+}
+
+.talk {
+    font-size: 70px;
+    font-weight: 200;
+}
+
+.talkDescription {
+    font-size: 22px;
+    font-style: italic;
+    color: white;
+}
+
+.contactUs {
+    background-color: white;
+    color: pink;
+    text-align: center;
+    font-size: 16px;
+}
+.feedback {
+    grid-row-start: 2;
+    grid-row-end: 8;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.addressHeading {
+    font-size: 32px;
+    font-weight: 200;
+    color: white;
+}
+
+.address {
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+
+.location {
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+}
+.section10 {
+    grid-row-start: 203;
+    grid-row-end: 204;
+    grid-column-start: 1;
+    grid-column-end: 19;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    border: solid orange;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 10;
+    padding: 10px;
+}
+
+.footerLinks {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    padding: 10px;
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        height: 100%;
+        width: 20%;
+    }
+    .section7 {
+        background-color: lightblue;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section8 {
+        background-color: magenta;
+    }
